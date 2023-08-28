@@ -18,8 +18,7 @@ const {
   PORT
 } = process.env;
 
-const dbUri =`mongodb+srv://premium-fitness:0tiX1BMn7JCPgY73@cluster0.kpbun60.mongodb.net/?retryWrites=true&w=majority`
-// const dbUri = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER}.pmrvhyt.mongodb.net/${MONGODB_DBNAME}`;
+const dbUri = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER}.kpbun60.mongodb.net/${MONGODB_DBNAME}`;
 // const dbUri =`mongodb://localhost:27017/premium`
 mongoose.connect(dbUri)
   .then(() => {
